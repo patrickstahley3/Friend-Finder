@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resident Evil Matcher</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    ​
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <p class="navbar-text">
+            <h2 class="text-center">Resident Evil Character/Quiz Questions!</h2>
+        </p>
+    </nav>
+    <div class="container">
+
+
+        <h3><strong>Question 1</strong></h3>
+        <h4>Where in Raccoon City would you prefer to hang out?</h4>
+        <select data-placeholder="" class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 Police Station</option>
+            <option value="2">2 underground lab</option>
+            <option value="3">3 the general hospital</option>
+            <option value="4">4 Clocktower</option>
+            <option value="5">5 anywhere</option>
+        </select>
+
+        <h3><strong>Question 2</strong></h3>
+        <h4>Which Weapon/or Skill Would You Use to Kill a Bio.Organic.Weapon.?</h4>
+        <select data-placeholder="" class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 Telekinetic Energy Force</option>
+            <option value="2">2 Rhino Charge (Instant Death)</option>
+            <option value="3">3 Assault Rifle</option>
+            <option value="4">4 Rocket Launcher</option>
+            <option value="5">5 Sniper Rifle</option>
+        </select>
+
+        <h3><strong>Question 3</strong></h3>
+        <h4>Which Organization Do You Work For?</h4>
+        <select data-placeholder="" class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 S.T.A.R.S.</option>
+            <option value="2">2 The Umbrella Corporation</option>
+            <option value="3">3 The Spec Ops Unit</option>
+            <option value="4">4 B.S.A.A.</option>
+            <option value="5">5 The U.S. Government Agency Services</option>
+        </select>
+
+        <h3><strong>Question 4</strong></h3>
+        <h4>What's Your Combat Uniform?</h4>
+        <select data-placeholder="" class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 Red Dress</option>
+            <option value="2">2 RCPD Uniform</option>
+            <option value="3">3 STARS Uniform</option>
+            <option value="4">4 Midnight Outfit, Black Coat, and Black Shades</option>
+            <option value="5">5 Torn up leather trench coat</option>
+        </select>
+
+        <h3><strong>Question 5</strong></h3>
+        <h4>Favorite Pistol?</h4>
+        <select data-placeholder="" class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 Beretta 92K/FS</option>
+            <option value="2">2 Glock 17</option>
+            <option value="3">3 Samurai Edge</option>
+            <option value="4">4 Desert Eagle</option>
+            <option value="5">5 Killer7</option>
+        </select>
+        <br>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block specialbutton" id="submit"><i
+                class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
+
+    </div>
+    <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title"><strong>Your Resident Evil Character:</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="matchName"></h2>
+                 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- end the bootstrap container -->
+    </div>
+
+    <!-- bottom navbar functioning as footer -->
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container vertical_alignment">
+            <p class="text-center"><a href="/api/friends" target="_blank">API Friends List</a> | <a
+                     
+                   href="home.html">Home</a></p>
+        </div>
+    </nav>
+
+
+
+
+</body>
+
+</html>
